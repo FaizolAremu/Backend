@@ -36,8 +36,12 @@ app.get('/', (req, res) => {
     res.send('Welcome to Backend Class')
 });
 
-app.get('/worldcup', (req, res) => {
+app.get('/worldcups', (req, res) => {
     res.send(worldCup)
+});
+
+app.get('/hurray', (req, res) => {
+    res.send("I built my first api")
 });
 
 app.listen(port, () => {
